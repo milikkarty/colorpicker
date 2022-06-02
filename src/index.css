@@ -1,5 +1,10 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,39 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.square {
+  border: 1px solid black;
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px black;
+  display: grid;
+  height: 300px;
+  margin-bottom: 10px;
+  place-content: center;
+  width: 300px;
+}
+
+.square p {
+  font-size: 20px;
+}
+
+.search label {
+  left: -99999px;
+  position: absolute;
+}
+
+.search input {
+  border-radius: 7px;
+  outline: none;
+  padding: 5px;
+  width: 300px;
 }
