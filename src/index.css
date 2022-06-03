@@ -33,11 +33,23 @@ code {
   height: 300px;
   margin-bottom: 10px;
   place-content: center;
+  position: relative;
   width: 300px;
 }
 
 .square p {
   font-size: 20px;
+  text-align: center;
+}
+
+.square button {
+  border: 1px solid black;
+  border-radius: 7px;
+  bottom: 0;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  width: 30px;
 }
 
 .search label {
